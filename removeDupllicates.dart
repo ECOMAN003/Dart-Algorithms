@@ -3,12 +3,11 @@ void main() {
 }
 
 int removeDuplicates(List<int> nums) {
-  for (var i = 0; i < nums.length - 1;) {
+  for (var i = 0; i < nums.length - 1; i++) {
     if (nums[i] == nums[i + 1]) {
       nums.removeAt(i+1);
       continue;
     }
-    i++;
   }
   return nums.length;
 }
